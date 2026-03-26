@@ -1,25 +1,95 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-<title>CI/CD Demo</title> 
-<style> 
-body{ 
-text-align:center; 
-font-family:Times New Roman; 
-background-color:#af0d0d; 
-} 
-h1{ 
-color:#0ef777; 
-} 
-</style> 
-</head> 
-<body> 
-<h1>CI/CD Pipeline Working</h1> 
-<h2>Deployed using Jenkins + Docker + Kubernetes</h2> 
-<p>This webpage is automatically deployed using a CI/CD pipeline.</p> 
-</body> 
-</html> 
-Create a Dockerfile 
-FROM nginx:latest 
-COPY index.html /usr/share/nginx/html/index.html 
-EXPOSE 80
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sanjai K - Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+        }
+
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background: rgba(0,0,0,0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px black;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffcc;
+        }
+
+        .section {
+            margin: 15px 0;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #00ffcc;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #00ffcc;
+            color: black;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>My Developer Profile</h1>
+
+    <div class="section">
+        <p><span class="label">Name:</span> Sanjai K</p>
+        <p><span class="label">Register Number:</span> 23MIS0225</p>
+        <p><span class="label">Course:</span> Agile Development & DevOps Lab</p>
+        <p><span class="label">College:</span> VIT</p>
+    </div>
+
+    <div class="section skills">
+        <p class="label">Skills:</p>
+        <span>Docker</span>
+        <span>Jenkins</span>
+        <span>Kubernetes</span>
+        <span>GitHub</span>
+        <span>HTML & CSS</span>
+        <span>CI/CD Pipelines</span>
+    </div>
+
+    <div class="section">
+        <p><span class="label">Email:</span> sanjai.k23vitstudent.ac.in</p>
+    </div>
+
+    <div class="section">
+        <p><span class="label">About Me:</span></p>
+        <p>
+            Passionate DevOps learner with hands-on experience in building 
+            CI/CD pipelines using Jenkins, Docker, and Kubernetes. 
+            Interested in cloud computing and automation technologies.
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Sanjai K | DevOps Portfolio</p>
+    </div>
+</div>
+
+</body>
+</html>
