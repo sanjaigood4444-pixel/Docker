@@ -1,106 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sanjai- Profile</title>
+    <meta charset="UTF-8">
+    <title>Department of Computer Science | University Webpage</title>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #f5f7fa;
-        }
-
-        .header {
-            background: #4a90e2;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .card {
-            background: white;
-            width: 50%;
-            margin: 40px auto;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
-        }
-
-        .row {
-            margin: 10px 0;
-        }
-
-        .label {
-            font-weight: bold;
-            color: #333;
-        }
-
-        .skills {
-            margin-top: 10px;
-        }
-
-        .skills li {
-            list-style: none;
-            background: #4a90e2;
-            color: white;
-            display: inline-block;
-            padding: 6px 12px;
-            margin: 5px;
-            border-radius: 20px;
-        }
-
-        .about {
-            margin-top: 15px;
-            line-height: 1.5;
-            color: #555;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #888;
-            font-size: 13px;
-        }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; }
+        header { background: #003366; color: white; padding: 2rem; text-align: center; }
+        nav { background: #f4f4f4; padding: 10px; text-align: center; border-bottom: 2px solid #ccc; }
+        section { padding: 20px; max-width: 1000px; margin: auto; border-bottom: 1px solid #eee; }
+        h2 { color: #003366; border-left: 5px solid #003366; padding-left: 10px; }
+        .faculty-list, .course-list { list-style: none; padding: 0; }
+        .item { margin-bottom: 15px; }
+        footer { background: #222; color: white; text-align: center; padding: 1rem; position: relative; bottom: 0; width: 100%; }
     </style>
 </head>
-
 <body>
 
-<div class="header">
-    Student Profile
-</div>
+<header>
+    <h1>VIT Technical University</h1>
+    <p>Empowering Innovation through Excellence in Education and Research.</p>
+    <p><strong>Chancellor:</strong> Dr. Jane Smith | <strong>Vice-Chancellor:</strong> Prof. Robert Brown</p>
+</header>
 
-<div class="card">
-    <div class="row"><span class="label">Name:</span> Sanjai k</div>
-    <div class="row"><span class="label">Register Number:</span> 23MIS0225</div>
-    <div class="row"><span class="label">Course:</span> Agile Development & DevOps Lab</div>
-    <div class="row"><span class="label">College:</span> VIT</div>
+<nav>
+    <a href="#about">About</a> | <a href="#courses">Courses</a> | <a href="#faculty">Faculty</a> | <a href="#contact">Contact</a>
+</nav>
 
-    <div class="skills">
-        <span class="label">Skills:</span><br>
-        <li>Docker</li>
-        <li>Jenkins</li>
-        <li>Kubernetes</li>
-        <li>Git</li>
-        <li>CI/CD</li>
-        <li>Cloud Basics</li>
+<section id="about">
+    <h2>About the Department</h2>
+    <p>The Department of Computer Science at VIT Technical University is dedicated to cutting-edge research and high-quality education, we focus on equipping students with the theoretical foundation and practical skills necessary to lead in the rapidly evolving tech industry.</p>
+</section>
+
+<section id="courses">
+    <h2>Courses Offered</h2>
+    <div class="item">
+        <h3>M Tech (Software Engineering)</h3>
+        <p>A 5-year undergraduate program covering software engineering, algorithms, and web technologies.</p>
     </div>
-
-    <div class="row">
-        <span class="label">Email:</span> sanjai.k2023@vit.ac.in
+    <div class="item">
+        <h3>M.Sc. in Data Science</h3>
+        <p>A 2-year postgraduate course focusing on big data analytics, machine learning, and statistical modeling.</p>
     </div>
+</section>
 
-    <div class="about">
-        <span class="label">About Me:</span><br>
-        Enthusiastic student exploring DevOps practices and cloud technologies.
-        Interested in automation, containerization, and continuous deployment systems.
-    </div>
+<section id="faculty">
+    <h2>Our Faculty</h2>
+    <ul class="faculty-list">
+        <li class="item"><strong>Dr. Sweta Bhattacharya</strong> - Professor (Agile development)</li>
+        <li class="item"><strong>Dr. Alice Johnson</strong> - Professor (Artificial Intelligence & Robotics)</li>
+        <li class="item"><strong>Dr. Mark Davis</strong> - Associate Professor (Cybersecurity & Network Systems)</li>
+        <li class="item"><strong>Prof. Sarah Lee</strong> - Assistant Professor (Cloud Computing)</li>
+    </ul>
+</section>
 
-    <div class="footer">
-        © 2026 sanjai k | Student Portfolio
-    </div>
-</div>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Building 4, Science Block, Global Technical University, City, State, 12345</p>
+    <p><strong>Phone:</strong> +1 (555) 012-3456</p>
+    <p><strong>Email:</strong> cs-dept@gtu.edu</p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Vellore Institutional Technology University. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
